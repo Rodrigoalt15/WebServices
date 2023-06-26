@@ -80,7 +80,7 @@ public class PostController {
         if (postDto.getContent().length() > 5000) {
             throw new ValidationException("El contenido de la publicación no puede tener más de 5000 caracteres");
         }
-        if (postDto.getUser() == null) {
+        if (postDto.getUserId() == null) {
             throw new ValidationException("El usuario de la publicación no puede ser nulo");
         }
     }
