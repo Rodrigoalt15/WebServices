@@ -30,7 +30,6 @@ public class PostServiceImp implements PostService {
     @Override
     public PostDto createPost(PostDto postDTO) {
         Post post = modelMapper.map(postDTO, Post.class);
-        post.setUser(userRepository.findById(postDTO.getUserId()).orElse(null));
         post = postRepository.save(post);
         return modelMapper.map(post, PostDto.class);
     }
@@ -44,7 +43,6 @@ public class PostServiceImp implements PostService {
     @Override
     public PostDto updatePost(PostDto postDTO) {
         Post post = modelMapper.map(postDTO, Post.class);
-        post.setUser(userRepository.findById(postDTO.getUserId()).orElse(null));
         post = postRepository.save(post);
         return modelMapper.map(post, PostDto.class);
     }

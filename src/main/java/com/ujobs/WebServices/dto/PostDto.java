@@ -15,7 +15,7 @@ import lombok.NoArgsConstructor;
 public class PostDto {
     private Long id;
     private String content;
-    private Long userId;
+    private UserDto user;
     private List<UserDto> likes;
     private List<UserDto> shares;
     private List<CommentDto> comments;
