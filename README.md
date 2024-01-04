@@ -20,7 +20,8 @@ To get a local copy up and running, follow these steps:
 ## Built With
 
 - Java
-- (Other technologies used in the project)
+- Spring Boot
+-MySql
 
 ## Contributing
 
